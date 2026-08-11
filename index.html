@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOVA ANIME</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header><a class="logo" href="/">NOVA<span>ANIME</span></a><div id="nav"></div></header>
+<main>
+<section class="hero">
+  <div><p class="eyebrow">YOUR PRIVATE ANIME SPACE</p><h1>Watch your next<br><span>favorite story.</span></h1>
+  <p class="muted">A premium anime library with weekly membership access.</p>
+  <div class="price"><b id="price">199</b> <small>PKR / week</small></div>
+  <button onclick="document.getElementById('member').scrollIntoView({behavior:'smooth'})">Get Weekly Access</button></div>
+</section>
+
+<section id="member" class="membership">
+  <div><h2>Weekly Membership</h2><p class="muted">Membership is required to watch episodes.</p></div>
+  <div class="paybox"><strong id="payprice">PKR 199 / week</strong>
+    <div class="paybuttons">
+      <button class="secondary" onclick="pay('easypaisa')">Easypaisa</button>
+      <button class="secondary" onclick="pay('jazzcash')">JazzCash</button>
+    </div>
+    <p id="paymsg" class="tiny">Real payments activate only after the official merchant gateway is connected.</p>
+  </div>
+</section>
+
+<section><div class="sectionhead"><h2>Anime Library</h2><span id="status" class="pill">Members only</span></div><div id="grid" class="grid"></div></section>
+</main>
+<footer>© NOVA ANIME · Owner controlled</footer>
+<script src="/app.js"></script>
+</body></html>

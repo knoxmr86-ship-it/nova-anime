@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Owner Panel</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="dashboard"><div class="top"><div><p class="eyebrow">PRIVATE CONTROL ROOM</p><h1>Owner Panel</h1></div><button class="secondary" onclick="logout()">Logout</button></div>
+<div id="login" class="card"><h2>Owner Login</h2><input id="au" placeholder="Username"><input id="ap" type="password" placeholder="Password"><button onclick="adminLogin()">Enter</button><p id="am" class="tiny"></p></div>
+<div id="panel" style="display:none">
+<section class="card"><h2>Site Settings</h2><label>Site name</label><input id="sn"><label>Weekly price (PKR)</label><input id="sp" type="number"><button onclick="saveSettings()">Save Settings</button></section>
+<section class="card"><h2>Add Anime</h2><input id="title" placeholder="Anime title"><textarea id="desc" placeholder="Description"></textarea><input id="poster" placeholder="Poster image URL"><input id="video" placeholder="Protected video URL"><button onclick="addAnime()">Add Anime</button><p class="tiny">Only you can add/delete titles from this panel.</p></section>
+<section class="card"><h2>Your Library</h2><div id="list"></div></section>
+</div></main><script src="/admin.js"></script></body></html>
